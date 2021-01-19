@@ -1,0 +1,29 @@
+.terms {
+  padding: 100px 0;
+}
+
+.terms-text-container {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 50px auto;
+  padding: 0 10px;
+}
+
+.terms-text-container a {
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inhert;
+  color: rgb(249, 177, 132);
+}
+
+.terms-text-container b {
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: 700;
+  /* color: rgb(249, 177, 132); */
+}
+
+.terms-text-container * {
+  padding: 15px 0;
+}

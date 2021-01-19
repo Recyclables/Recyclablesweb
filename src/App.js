@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./components/pages/HomePage/Home";
+import Contact from "./components/pages/ContactPage/Contact";
+import Faq from "./components/pages/HelpPage/Help";
+import About from "./components/pages/AboutPage/About";
+import Privacy from "./components/pages/PrivacyPage/Privacy";
+import Terms from "./components/pages/TermsPage/Terms";
+import ScrollToTop from "./components/ScrollToTop";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Fragment>
+          <ScrollToTop />
+          <NavBar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about-us" component={About} />
+            <Route path="/help" component={Faq} />
+            <Route path="/contact-us" component={Contact} />
+            <Route path="/privacy" component={Privacy} />
+            <Route path="/terms" component={Terms} />
+          </Switch>
+          <Footer />
+        </Fragment>
+      </BrowserRouter>
+    </>
   );
-}
+};
 
 export default App;

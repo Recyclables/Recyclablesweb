@@ -1,0 +1,32 @@
+.faq {
+  padding-top: 20px;
+}
+
+.faqBox {
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  overflow: auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 70px rgba(225, 225, 225, 0.62);
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.faqBox:hover {
+  transform: scale(1.02);
+}
+
+.faqBox h1 {
+  font-size: 22px;
+}
+
+.faqBox p {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1025px) {
+  .faqBox h1 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,141 @@
+.Demo {
+  height: auto;
+  padding: 80px 0;
+}
+
+.Demo-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.Demo-heading {
+  color: black;
+  margin-bottom: 48px;
+  font-size: 32px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Demo-row {
+  align-items: center;
+}
+
+.Demo-text-container {
+  max-width: 500px;
+  padding-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Demo-img-wrapper {
+  display: inline;
+}
+
+.Demo-img {
+  height: 35px;
+  margin: 0 2rem 5rem 0;
+}
+
+.Demo h1 {
+  margin-bottom: 24px;
+  max-width: 90%;
+  line-height: 1.1;
+}
+
+ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+ol li {
+  margin: 0 0 5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: black;
+  font-size: inherit;
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 10px);
+}
+
+.Demo-video-wrap {
+  background-size: 270px 555px;
+  width: 270px;
+  height: 555px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.Demo-video-iphone {
+  position: absolute;
+  margin-top: 69px;
+  margin-left: 18px;
+  border-radius: 3px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+video {
+  object-fit: contain;
+}
+
+video.Demo-video-iphone-player {
+  cursor: pointer;
+  width: 234px;
+  height: 416px;
+  line-height: 0;
+  margin: 0;
+  vertical-align: top;
+}
+
+.Demo mark {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1025px) {
+  .Demo-heading {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .Demo-video-wrap {
+    background-size: 216px 444px;
+    width: 216px;
+    height: 444px;
+    margin: 20px auto;
+    position: relative;
+  }
+
+  .Demo-video-iphone {
+    position: absolute;
+    margin-top: 55.2px;
+    margin-left: 14.4px;
+    border-radius: 3px;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .Demo-img {
+    height: 25px;
+    margin: 0 1rem 2rem 0;
+  }
+
+  video {
+    object-fit: contain;
+  }
+
+  video.Demo-video-iphone-player {
+    cursor: pointer;
+    width: 187.2px;
+    height: 332.8px;
+    line-height: 0;
+    margin: 0;
+    vertical-align: top;
+  }
+}

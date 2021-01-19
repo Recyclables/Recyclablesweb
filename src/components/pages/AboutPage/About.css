@@ -1,0 +1,94 @@
+.about {
+  padding: 100px 0;
+}
+
+.about-mission-text-container {
+  width: 100%;
+  max-width: 750px;
+  display: block;
+  margin: 50px auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.about-row {
+  padding: 80px 0;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.about p {
+  margin: 15px 0;
+}
+
+.about-charts {
+  height: 250px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.about-charts * {
+  font-size: 12px;
+}
+
+.about-img-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.about-img-wrapper img {
+  display: block;
+  border: 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.about-goals-text-container * {
+  margin: 10px 0;
+}
+
+.about-team-text-container {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.about-profile-container {
+  padding: 0 5px 80px 5px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 5rem;
+}
+
+@media screen and (max-width: 961px) {
+  .about {
+    padding: 50px 0;
+  }
+  .about-charts {
+    height: 200px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-charts * {
+    font-size: 10px;
+  }
+  .about-mission-text-container {
+    margin: 20px 0 50px 0;
+  }
+  .about-row {
+    margin: 30px 0;
+  }
+  .about-goals-text-container {
+    margin-bottom: 30px;
+  }
+}

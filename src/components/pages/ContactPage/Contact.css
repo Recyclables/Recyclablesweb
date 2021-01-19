@@ -1,0 +1,131 @@
+.contact {
+  padding: 100px 0 130px 0;
+  background: whtie;
+}
+
+.contact-text-container {
+  width: 100%;
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 0 10px;
+  z-index: 1;
+}
+
+.contact-row {
+  margin: 100px 0;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.contact p {
+  margin: 25px 0;
+}
+
+.contact mark {
+  font-weight: 700;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form-container p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.errorMsg {
+  color: #bf1650;
+  margin: 0;
+}
+
+.errorMsg::before {
+  display: inline;
+  content: "* ";
+}
+
+.contact-form-container input {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #dedede;
+  padding: 10px 15px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.contact-form-container label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: black;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.contact-form-container textarea {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  height: 70px;
+  border: 2px solid #dedede;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.contact-form-container input[type="submit"] {
+  background: black;
+  color: white;
+  border: none;
+  padding: 0.7em 1.4em;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+}
+
+.contact-form-container input[type="submit"]:hover {
+  background: #0f75bcff;
+}
+
+.contact-form-container input[type="button"]:active,
+.contact-form-container input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+.contact-form-container input:disabled {
+  opacity: 0.4;
+}
+
+.contact-form-container input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+.contact-form-container input[type="button"],
+.contact-form-container input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 961px) {
+  .contact {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-row {
+    margin: 30px 0;
+  }
+  .contact-text-container {
+    margin: 20px 0 60px 0;
+  }
+}
