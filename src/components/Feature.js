@@ -12,10 +12,18 @@ const Feature = () => {
         <div className="text">As featured on :</div>
         <div className="container">
           <div className="feature-wrap">
-            <img src={channel8} alt="" className="imagezoom" />
-            <img src={channelu} alt="" className="imagezoom" />
-            <img src={sic} alt="" className="imagezoom" />
-            <img src={goodyfeed} alt="" className="imagezoom" />
+            <section>
+              <img src={channel8} alt="" className="imagezoom"/>
+            </section>
+            <section>
+              <img src={channelu} alt="" className="imagezoom"/>
+            </section>
+            <section>
+              <img src={sic} alt="" className="imagezoom"/>
+            </section>
+            <section>
+              <img src={goodyfeed} alt="" className="imagezoom"/>
+            </section>
           </div>
         </div>
       </div>

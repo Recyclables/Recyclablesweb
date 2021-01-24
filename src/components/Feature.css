@@ -5,6 +5,7 @@
 .feature > .container {
   width: 100%;
   max-width: 800px;
+
 }
 
 .feature .text {
@@ -17,46 +18,45 @@
 
 .feature-wrap {
   height: 56px;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  table-layout: fixed;
+  justify-content:space-between;
 }
 
 .feature-wrap::-webkit-scrollbar {
   display: none;
 }
 
-.imagezoom {
-  height: 56px;
-  padding: 5px;
+.feature-wrap section{
+  padding:  0 10px;
   transition: transform 0.2s; /* Animation */
   filter: saturate(0%);
 }
 
-.imagezoom:hover {
+.feature-wrap img{
+  height: 40px;
+  width: auto;
+}
+
+section:hover{
   transform: scale(1.1);
   filter: saturate(100%);
 }
 
 @media screen and (max-width: 960px) {
-  .imagezoom:hover {
+  section:hover{
     filter: saturate(0%);
     pointer-events: none;
     transform: none;
   }
   .feature > .container {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
   }
   .text {
     font-size: 14px;
   }
-  .imagezoom {
-    height: 36px;
+  .feature-wrap img{
+    height: 30px;
+    width: auto;
   }
 }
