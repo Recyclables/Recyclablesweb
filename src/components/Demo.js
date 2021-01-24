@@ -1,8 +1,8 @@
 import React from "react";
 import "./Demo.css";
-import iphonesix from "../assets/iphone6.png";
+import iphonesix from "../assets/iphone6.webp";
 import demovid from "../assets/demo.mp4";
-import gbadge from "../assets/playstore-badge.png";
+import gbadge from "../assets/playstore-badge.webp";
 import appbadge from "../assets/appstore-badge.svg";
 import { Slide } from "react-awesome-reveal";
 

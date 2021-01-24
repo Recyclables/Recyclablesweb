@@ -1,8 +1,8 @@
 import React from "react";
-import channel8 from "../assets/Channel8.jpg";
-import channelu from "../assets/ChannelU.jpg";
-import goodyfeed from "../assets/goodyfeed.jpg";
-import sic from "../assets/sic.jpg";
+import channel8 from "../assets/Channel8.webp";
+import channelu from "../assets/ChannelU.webp";
+import goodyfeed from "../assets/goodyfeed.webp";
+import sic from "../assets/sic.webp";
 import "./Feature.css";
 
 const Feature = () => {

@@ -14,7 +14,7 @@ import {
   ResponsiveContainer,
   CartesianGrid
 } from "recharts";
-import aboutimg from "../../../assets/nus_sic.jpg";
+import aboutimg from "../../../assets/nus_sic.webp";
 
 const About = () => {
   return (

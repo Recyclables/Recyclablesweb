@@ -7,7 +7,7 @@ export const homeObjOne = {
     "linear-gradient(277.94deg, rgba(204, 225, 236, 1) 0.92%, rgba(58, 167, 210, 0.9) 149.21%)",
   headColor: "#000000",
   paraColor: "#000000",
-  img: "images/section1.png",
+  img: "images/section1.webp",
   alt: "Image",
   Button: true,
   imgStart: ""
@@ -22,7 +22,7 @@ export const homeObjTwo = {
     "linear-gradient(277.94deg, rgba(204, 225, 236, 1) 0.92%, rgba(58, 167, 210, 0.9) 149.21%)",
   headColor: "#000000",
   paraColor: "#000000",
-  img: "images//section2.png",
+  img: "images//section2.webp",
   alt: "Image",
   Button: false,
   imgStart: "start"
@@ -37,7 +37,7 @@ export const homeObjThree = {
     "linear-gradient(277.94deg, rgba(204, 225, 236, 1) 0.92%, rgba(58, 167, 210, 0.9) 149.21%)",
   headColor: "#000000",
   paraColor: "#000000",
-  img: "images/section3.png",
+  img: "images/section3.webp",
   alt: "Image",
   Button: false,
   imgStart: ""

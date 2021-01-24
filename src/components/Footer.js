@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../assets/recyclables-signature.png";
+import logo from "../assets/recyclables-signature.webp";
 import { Link } from "react-router-dom";
 import Pdf from '../guidelines.pdf';
 

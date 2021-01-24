@@ -1,5 +1,5 @@
 import React from "react";
-import iphone from "../assets/iphone-min.png";
+import iphone from "../assets/iphone-min.webp";
 import "./Hero.css";
 import { Link } from "react-scroll";
 import { Slide } from "react-awesome-reveal";
@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="hero">
         <div className="container">
           <div className="row hero-row">
-            <div className="col">
+            <div className="col" style={{zIndex: "1"}}>
               <div className="hero-text-container">
                 <h1>Help the environment with a few simple clicks.</h1>
                 <p>
@@ -40,7 +40,7 @@ const Hero = () => {
             <div className="col">
               <Slide triggerOnce direction="left">
                 <div className="hero-img-wrapper">
-                  <img src={iphone} alt="" className="hero-img" />
+                  <img src={iphone} alt="" className="hero-img"/>
                 </div>
               </Slide>
             </div>
