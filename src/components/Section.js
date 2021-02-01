@@ -1,6 +1,7 @@
 import React from "react";
 import "./Section.css";
 import { Fade } from "react-awesome-reveal";
+import Pdf from '../guidelines.pdf';
 
 const Section = ({
   step,
@@ -33,7 +34,7 @@ const Section = ({
                 </h2>
                 <p style={{ color: paraColor }}>{description}</p>
                 <a
-                  href="guidelines.pdf"
+                  href={Pdf}
                   target="_blank"
                   style={{
                     display: Button ? "inline" : "none"
